@@ -1,29 +1,25 @@
-.blueLine {
-    background-image: url('/ui/layout-line-blue.svg');
+.backgroundLine {
     background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
     position: absolute;
     top: 0;
-    width: 100%;
     height: 100px;
+}
+.blueLine {
+    background-image: url('/ui/layout-line-blue.svg');
+    width: 65%;
     z-index: 3;
 }
 .greenLine {
     background-image: url('/ui/layout-line-green.svg');
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100px;
+    width: 49%;
     z-index: 2;
     left: 28%;
 }
 .yellowLine {
     background-image: url('/ui/layout-line-yellow.svg');
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100px;
+    width: 54%;
     z-index: 1;
     left: 32%;
 }

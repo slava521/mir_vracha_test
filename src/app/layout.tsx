@@ -17,9 +17,9 @@ export default function RootLayout(
     return (
         <html lang="ru">
         <body>
-            <div className={classes.blueLine}/>
-            <div className={classes.greenLine}/>
-            <div className={classes.yellowLine}/>
+            <div className={`${classes.backgroundLine} ${classes.blueLine}`}/>
+            <div className={`${classes.backgroundLine} ${classes.greenLine}`}/>
+            <div className={`${classes.backgroundLine} ${classes.yellowLine}`}/>
             <Container>
                 {children}
             </Container>
