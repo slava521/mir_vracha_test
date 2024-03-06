@@ -1,8 +1,14 @@
+import Section from "@/components/ui/section/Section";
 
 export default function Home() {
     return (
         <>
-            <h1>test</h1>
+            <Section header='ХОБЛ: мифы и реальность'>
+                test1
+            </Section>
+            <Section header='Терапия ХОБЛ: что в фокусе?'>
+                test2
+            </Section>
         </>
     );
 }

@@ -1,0 +1,17 @@
+.section {
+    background-image: url('/ui/header-line.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 40px;
+    height: 110px;
+}
+
+.content {
+
+}
