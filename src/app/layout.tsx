@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 import classes from "./layout.module.css";
 import Container from "@/components/ui/container/Container";
+import {NotoSans} from "@/app/fonts";
 
 export const metadata: Metadata = {
     title: "ХОБЛ",
@@ -16,7 +17,7 @@ export default function RootLayout(
     }>) {
     return (
         <html lang="ru">
-        <body>
+        <body className={NotoSans.className}>
             <div className={`${classes.backgroundLine} ${classes.blueLine}`}/>
             <div className={`${classes.backgroundLine} ${classes.greenLine}`}/>
             <div className={`${classes.backgroundLine} ${classes.yellowLine}`}/>

@@ -11,7 +11,7 @@ const Section: FC<Props> = ({header, children}) => {
             <h2 className={classes.header}>
                 {header}
             </h2>
-            <div className={classes.content}>
+            <div>
                 {children}
             </div>
         </section>

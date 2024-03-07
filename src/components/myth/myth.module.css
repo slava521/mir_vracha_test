@@ -1,0 +1,55 @@
+.myth {
+    display: flex;
+    gap: 29px;
+    border-radius: 20px;
+    border: 1px solid #01457A;
+    padding: 40px 52px 40px 38px;
+    position: relative;
+}
+
+.myth:hover {
+    cursor: pointer;
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 0 50% 50% 50%;
+    position: relative;
+    background: linear-gradient(90deg, #FDD966 0%, #BCD77E 68.54%);
+}
+
+.icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    background-image: url("/ui/background-arrow.svg");
+    width: 295px;
+    height: 115px;
+    padding-top: 6px;
+    padding-right: 47px;
+}
+
+.text {
+    position: relative;
+    width: 750px;
+}
+
+.blur {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    height: 100%;
+}
+
+.hand {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}

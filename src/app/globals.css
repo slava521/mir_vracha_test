@@ -9,4 +9,11 @@
 body {
     color: #01457A;
     overflow-x: hidden;
+    font-family: Noto Sans, serif;
+    line-height: 32.69px;
+}
+
+body, h3 {
+    font-weight: 400;
+    font-size: 24px;
 }
