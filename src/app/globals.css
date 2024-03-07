@@ -34,3 +34,9 @@ body, h4 {
 h3 {
     font-size: 28px;
 }
+
+sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
