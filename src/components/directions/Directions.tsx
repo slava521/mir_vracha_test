@@ -1,9 +1,9 @@
 import {FC} from "react";
 import InhalerBlock from "@/components/inhalerBlock/InhalerBlock";
-import classes from "./directionsBlock.module.css";
+import classes from "./directions.module.css";
 import Block from "@/components/ui/block/Block";
 
-const DirectionsBlock: FC = () => {
+const Directions: FC = () => {
     return (
         <div>
             <div className={classes.inhalers}>
@@ -59,4 +59,4 @@ const DirectionsBlock: FC = () => {
     );
 };
 
-export default DirectionsBlock;
+export default Directions;

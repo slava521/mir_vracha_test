@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 15px;
+    background: #FDD96640;
+    border-radius: 20px;
+    width: 367px;
+    text-align: center;
+}
+
+.image {
+    height: 134px;
+}
+
+.disease {
+    font-size: 26px;
+}
+
+.percent {
+    font-weight: 700;
+    font-size: 96px;
+    height: 96px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.research {
+    font-weight: 300;
+    font-size: 18px;
+}

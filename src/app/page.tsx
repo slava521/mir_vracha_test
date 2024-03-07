@@ -1,11 +1,11 @@
-import MythsBlock from "@/components/mythsBlock/MythsBlock";
-import FocusBlock from "@/components/focusBlock/FocusBlock";
+import MythsSection from "@/components/mythsSection/MythsSection";
+import FocusSection from "@/components/focusSection/FocusSection";
 
 export default function Home() {
     return (
         <>
-            <MythsBlock/>
-            <FocusBlock/>
+            <MythsSection/>
+            <FocusSection/>
         </>
     );
 }

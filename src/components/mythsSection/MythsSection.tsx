@@ -3,8 +3,10 @@
 import Section from "@/components/ui/section/Section";
 import Myth from "@/components/myth/Myth";
 import {FC, ReactNode} from "react";
-import classes from "./mythsBlock.module.css";
+import classes from "./mythsSection.module.css";
 import {useModal} from "@/hooks/useModal/useModal";
+import SpreadModalContent from "@/components/spreadModalContent/SpreadModalContent";
+import SurvivalModalContent from "@/components/survivalModalContent/SurvivalModalContent";
 
 type Myths = {
     iconSrc: string;
@@ -28,7 +30,7 @@ const myths: Myths = [
     }
 ]
 
-const MythsBlock: FC = () => {
+const MythsSection: FC = () => {
     const [openSpreadModal, SpreadModal] = useModal();
     const [openSurvivalModal, SurvivalModal] = useModal();
 
@@ -39,13 +41,13 @@ const MythsBlock: FC = () => {
                 <Myth {...myths[1]} onClick={openSurvivalModal} />
             </div>
             <SpreadModal>
-                modal1
+                <SpreadModalContent/>
             </SpreadModal>
             <SurvivalModal>
-                modal2
+                <SurvivalModalContent/>
             </SurvivalModal>
         </Section>
     );
 };
 
-export default MythsBlock;
+export default MythsSection;

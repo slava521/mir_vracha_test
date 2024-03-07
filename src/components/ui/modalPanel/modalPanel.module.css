@@ -20,4 +20,6 @@
     border: 1px solid #01457A;
     border-radius: 20px;
     z-index: 11;
+    overflow-y: auto;
+    max-height: 90vh;
 }
