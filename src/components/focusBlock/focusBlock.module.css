@@ -1,0 +1,16 @@
+.header {
+    width: 1290px;
+    height: 83px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #FDD966 0%, #BCD77E 68.54%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    font-weight: 700;
+    margin: 40px auto 50px;
+    text-align: center;
+}

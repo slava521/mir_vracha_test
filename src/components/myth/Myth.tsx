@@ -15,7 +15,7 @@ const Myth: FC<Props> = ({iconSrc, header, hand, text}) => {
                 <img src={iconSrc} alt={'Иконка'}/>
             </div>
             <div className={classes.header}>
-                <h3>{header}</h3>
+                <h4>{header}</h4>
             </div>
             <div className={classes.text}>
                 <p>{text}</p>

@@ -1,0 +1,36 @@
+.block {
+    width: 410px;
+    box-shadow: 0 0 25px 0 #8EA0AD59;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #FBFDFF 0%, #D8EFFF 100.86%);
+    padding: 30px 19px;
+    text-align: center;
+}
+
+.image {
+    position: relative;
+    width: max-content;
+    margin: auto;
+}
+
+.number {
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #FDD966 0%, #BCD77E 68.54%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    font-size: 28px;
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
