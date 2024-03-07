@@ -7,11 +7,15 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 22px;
 }
 
 .textBlock {
-    padding: 30px 40px;
+    padding: 30px 40px !important;
     width: 50%;
+    margin-top: 22px;
     margin-bottom: 93px;
+}
+
+.noWrap {
+    white-space: nowrap;
 }
