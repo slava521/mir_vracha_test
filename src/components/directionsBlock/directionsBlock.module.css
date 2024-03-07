@@ -2,3 +2,16 @@
     display: flex;
     justify-content: space-between;
 }
+
+.texts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 22px;
+}
+
+.textBlock {
+    padding: 30px 40px;
+    width: 50%;
+    margin-bottom: 93px;
+}

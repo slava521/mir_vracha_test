@@ -2,11 +2,13 @@
     background-image: url('/ui/header-line.svg');
     background-repeat: no-repeat;
     background-position: top left;
-    padding: 18px 45px;
+    padding: 0 45px;
     min-height: 200px;
 }
 
 .header {
     font-size: 40px;
     height: 110px;
+    margin-bottom: 40px;
+    padding-top: 18px;
 }

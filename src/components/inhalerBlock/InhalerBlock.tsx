@@ -1,5 +1,6 @@
 import {FC, ReactNode} from "react";
 import classes from "./inhalerBlock.module.css";
+import Block from "@/components/ui/block/Block";
 
 type Props = {
     header: ReactNode | string;
@@ -9,7 +10,7 @@ type Props = {
 
 const InhalerBlock: FC<Props> = ({header,number,  text}) => {
     return (
-        <div className={classes.block}>
+        <Block className={classes.block}>
             <div className={classes.image}>
                 <img src="/images/inhaler.svg" alt="Ингалятор"/>
                 <div className={classes.number}>
@@ -18,7 +19,7 @@ const InhalerBlock: FC<Props> = ({header,number,  text}) => {
             </div>
             <h4 className={classes.header}>{header}</h4>
             <p>{text}</p>
-        </div>
+        </Block>
     );
 };
 

@@ -6,7 +6,7 @@ import DirectionsBlock from "@/components/directionsBlock/DirectionsBlock";
 const FocusBlock: FC = () => {
     return (
         <Section header='Терапия ХОБЛ: что в фокусе?'>
-            <div className={classes.content}>
+            <div>
                 <div className={classes.header}>
                     <h3>Даже 1 среднетяжелое обострение — сигнал к увеличению объема терапии</h3>
                 </div>
