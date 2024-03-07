@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
     font-family: Noto Sans, serif;
     line-height: 32.69px;
+    background: linear-gradient(180deg, #FFFFFF 35.7%, #D8EFFF 100%);
 }
 
 body, h3 {

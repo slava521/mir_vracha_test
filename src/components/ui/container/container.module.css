@@ -1,5 +1,6 @@
 .container {
-    margin: 140px auto auto;
+    margin: 140px auto 117px;
     width: 1380px;
-    box-shadow: 0 0 10px lightgray;
+    box-shadow: 0 0 25px 0 #8EA0AD59;
+    background-color: white;
 }
