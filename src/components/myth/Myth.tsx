@@ -6,11 +6,12 @@ type Props = {
     header: string | ReactNode;
     hand: 'green' | 'blue';
     text: string;
+    onClick: VoidFunction;
 }
 
-const Myth: FC<Props> = ({iconSrc, header, hand, text}) => {
+const Myth: FC<Props> = ({iconSrc, header, hand, text, onClick}) => {
     return (
-        <div className={classes.myth}>
+        <div className={classes.myth} onClick={onClick}>
             <div className={classes.icon}>
                 <img src={iconSrc} alt={'Иконка'}/>
             </div>
