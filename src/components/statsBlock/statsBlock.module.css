@@ -6,16 +6,48 @@
     padding: 30px 15px;
     background: #FDD96640;
     border-radius: 20px;
-    width: 367px;
+    max-width: 367px;
+    width: 33%;
     text-align: center;
+
+    @media screen and (max-width: 1440px) {
+        width: 30%;
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 20px 10px;
+        width: calc(50% - 15px);
+        gap: 10px;
+    }
+    @media screen and (max-width: 425px) {
+        width: 100%;
+    }
 }
 
 .image {
     height: 134px;
+
+    @media screen and (max-width: 1024px) {
+        height: 100px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 90px;
+    }
+    @media screen and (max-width: 320px) {
+        height: 80px;
+    }
 }
 
 .disease {
     font-size: 26px;
+    @media screen and (max-width: 1024px) {
+        font-size: 22px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 14px;
+    }
 }
 
 .percent {
@@ -24,9 +56,30 @@
     height: 96px;
     display: inline-flex;
     align-items: center;
+    @media screen and (max-width: 1024px) {
+        height: 80px;
+        font-size: 80px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 60px;
+        font-size: 60px;
+    }
+    @media screen and (max-width: 320px) {
+        height: 50px;
+        font-size: 50px;
+    }
 }
 
 .research {
     font-weight: 300;
     font-size: 18px;
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 12px;
+    }
 }
