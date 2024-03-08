@@ -17,6 +17,9 @@
         gap: 60px;
         margin: 70px auto 50px;
     }
+    @media screen and (max-width: 768px) {
+        margin: 40px auto 30px;
+    }
     @media screen and (max-width: 320px) {
         gap: 30px;
         margin: 30px auto 30px;
