@@ -1,9 +1,8 @@
 import {useEffect} from "react";
 
 export const useScrollLock = (shouldBeLocked: boolean) => {
-    const body = document.querySelector('body')
-
     useEffect(() => {
+        const body = document.querySelector('body')
         if (body) {
             body.style.overflowY = shouldBeLocked ? 'hidden':''
         }
