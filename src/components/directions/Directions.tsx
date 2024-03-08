@@ -1,9 +1,16 @@
+"use client"
+
 import {FC} from "react";
 import InhalerBlock from "@/components/inhalerBlock/InhalerBlock";
 import classes from "./directions.module.css";
 import Block from "@/components/ui/block/Block";
+import {useWindowWidth} from "@/hooks/useWindowWidth/useWindowWidth";
+import Number from "@/components/ui/number/Number";
 
 const Directions: FC = () => {
+    const {isLaptop, isTablet, isMobile} = useWindowWidth()
+    const isSmallWindow = isLaptop || isTablet || isMobile;
+
     return (
         <div>
             <div className={classes.inhalers}>
@@ -27,10 +34,12 @@ const Directions: FC = () => {
                     text='Снижает частоту обострений, особенно в сочетании с ДДБА, подавляют хроническое воспаление при астме и снижают гиперреактивность дыхательных путей'
                 />
             </div>
-            <div className={classes.texts}>
-                <img src='/ui/arrow.svg' alt='Стрелка'/>
-                <img src='/ui/arrow.svg' alt='Стрелка'/>
-            </div>
+            {!isSmallWindow && (
+                <div className={classes.texts}>
+                    <img src='/ui/arrow.svg' alt='Стрелка'/>
+                    <img src='/ui/arrow.svg' alt='Стрелка'/>
+                </div>
+            )}
             <div className={classes.texts}>
                 <Block className={classes.textBlock}>
                     <p>
@@ -41,6 +50,12 @@ const Directions: FC = () => {
                         длительнодействующих антихолинергиков (ДДАХ),
                         действие которых дополняет и усиливает друг друга<sup>1</sup>.
                     </p>
+                    {isSmallWindow && (
+                        <>
+                            <Number number={1} position="topLeft"/>
+                            <Number number={2} position="bottomRight"/>
+                        </>
+                    )}
                 </Block>
                 <Block className={classes.textBlock}>
                     <p>
@@ -53,6 +68,12 @@ const Directions: FC = () => {
                         ХОБЛ снижает госпитальную летальность по сравнению с пациентами,
                         принимавшими только ДДБА (8,1% vs 13,2%)<sup>1</sup>.
                     </p>
+                    {isSmallWindow && (
+                        <>
+                            <Number number={2} position="topLeft"/>
+                            <Number number={3} position="bottomRight"/>
+                        </>
+                    )}
                 </Block>
             </div>
         </div>

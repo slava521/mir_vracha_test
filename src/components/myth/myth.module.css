@@ -5,6 +5,20 @@
     border: 1px solid #01457A;
     padding: 40px 52px 40px 38px;
     position: relative;
+
+    @media screen and (max-width: 1024px) {
+        padding: 30px 39px 30px 28px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 23px 30px 23px 21px;
+        gap: 15px;
+    }
+    @media screen and (max-width: 320px) {
+        padding: 16px 22px 16px 14px;
+        gap: 10px;
+    }
 }
 
 .myth:hover {
@@ -17,9 +31,23 @@
     border-radius: 0 50% 50% 50%;
     position: relative;
     background: linear-gradient(90deg, #FDD966 0%, #BCD77E 68.54%);
+
+    @media screen and (max-width: 1024px) {
+        height: 60px;
+        width: 60px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 50px;
+        width: 50px;
+    }
+    @media screen and (max-width: 320px) {
+        height: 40px;
+        width: 40px;
+    }
 }
 
 .icon img {
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,15 +56,39 @@
 
 .header {
     background-image: url("/ui/background-arrow.svg");
-    width: 295px;
-    height: 115px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    max-width: 295px;
+    max-height: 116px;
+    height: min-content;
     padding-top: 6px;
     padding-right: 47px;
+    @media screen and (max-width: 1024px) {
+        max-width: none;
+        height: auto;
+        background-size: contain;
+        padding-right: 24px;
+        width: calc(100% - 80px);
+    }
+    @media screen and (max-width: 768px) {
+        width: calc(100% - 65px);
+    }
+    @media screen and (max-width: 320px) {
+        padding-top: 3px;
+        width: calc(100% - 50px);
+    }
 }
 
 .text {
     position: relative;
-    width: 750px;
+    width: calc(100% - 443px);
+    max-width: 750px;
+
+    @media screen and (max-width: 1024px) {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .blur {
@@ -52,4 +104,14 @@
     top: 0;
     left: 100%;
     transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1024px) {
+        width: 60px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 40px;
+    }
+    @media screen and (max-width: 320px) {
+        width: 30px;
+    }
 }

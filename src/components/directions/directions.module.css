@@ -1,19 +1,46 @@
 .inhalers {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    @media screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .texts {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1024px) {
+        gap: 40px;
+        margin: 40px auto;
+    }
+}
+
+.texts > img {
+    max-width: 40%;
 }
 
 .textBlock {
     padding: 30px 40px;
-    width: 50%;
+    width: calc(50% - 15px);
     margin-top: 22px;
     margin-bottom: 93px;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 20px 30px;
+    }
+    @media screen and (max-width: 320px) {
+        padding: 10px 20px;
+    }
 }
 
 .noWrap {

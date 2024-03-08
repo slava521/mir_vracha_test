@@ -1,9 +1,24 @@
 .container {
     margin: 140px auto 117px;
-    width: 1380px;
+    width: 90%;
+    max-width: 1380px;
     box-shadow: 0 0 25px 0 #8EA0AD59;
     background-color: white;
     display: flex;
     flex-direction: column;
     gap: 110px;
+    position: relative;
+    z-index: 4;
+
+    @media screen and (max-width: 1440px) {
+        gap: 80px;
+    }
+    @media screen and (max-width: 1024px) {
+        gap: 60px;
+        margin: 70px auto 50px;
+    }
+    @media screen and (max-width: 320px) {
+        gap: 30px;
+        margin: 40px auto 30px;
+    }
 }

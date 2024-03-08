@@ -41,6 +41,39 @@ sup {
     top: -0.4em;
 }
 
-.scrollLock {
-    overflow-y: hidden;
+@media screen and (max-width: 1024px) {
+    body{
+        line-height: 24px;
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        line-height: 18px;
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 320px) {
+    body{
+        line-height: 14px;
+        font-size: 11px;
+    }
+    h4 {
+        font-size: 11px;
+    }
+    h3 {
+        font-size: 13px;
+    }
 }
