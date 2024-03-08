@@ -31,8 +31,8 @@ const myths: Myths = [
 ]
 
 const MythsSection: FC = () => {
-    const [openSpreadModal, SpreadModal] = useModal();
-    const [openSurvivalModal, SurvivalModal] = useModal();
+    const [openSpreadModal, SpreadModal] = useModal(SpreadModalContent);
+    const [openSurvivalModal, SurvivalModal] = useModal(SurvivalModalContent);
 
     return (
         <Section header='ХОБЛ: мифы и реальность'>
@@ -40,12 +40,8 @@ const MythsSection: FC = () => {
                 <Myth {...myths[0]} onClick={openSpreadModal} />
                 <Myth {...myths[1]} onClick={openSurvivalModal} />
             </div>
-            <SpreadModal>
-                <SpreadModalContent/>
-            </SpreadModal>
-            <SurvivalModal>
-                <SurvivalModalContent/>
-            </SurvivalModal>
+            <SpreadModal/>
+            <SurvivalModal/>
         </Section>
     );
 };

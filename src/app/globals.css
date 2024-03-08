@@ -40,3 +40,7 @@ sup {
     position: relative;
     top: -0.4em;
 }
+
+.scrollLock {
+    overflow-y: hidden;
+}

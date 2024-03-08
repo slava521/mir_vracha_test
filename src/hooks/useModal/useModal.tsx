@@ -1,12 +1,14 @@
-import {FC, PropsWithChildren, useState} from "react";
+import {FC, useState} from "react";
 import ModalPanel from "@/components/ui/modalPanel/ModalPanel";
+import {useScrollLock} from "@/hooks/useScrollLock/useScrollLock";
 
 type returnType = [
-    VoidFunction, FC<PropsWithChildren>
+    VoidFunction, FC
 ]
 
-export const useModal = (): returnType => {
+export const useModal = (ModalContent: FC): returnType => {
     const [isOpened, setIsOpened] = useState(false)
+    useScrollLock(isOpened)
 
     const openModal = () => {
         setIsOpened(true)
@@ -15,12 +17,12 @@ export const useModal = (): returnType => {
         setIsOpened(false)
     }
 
-    const modal: FC<PropsWithChildren> = ({children}) => {
+    const modal: FC = () => {
         return (
             isOpened
                 ? (
                     <ModalPanel close={closeModal}>
-                        {children}
+                        <ModalContent/>
                     </ModalPanel>
                 )
                 :null
