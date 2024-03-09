@@ -9,19 +9,19 @@
     margin-bottom: var(--mb);
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .text {
         --mb: 30px;
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .text {
         --mb: 20px;
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .text {
         --mb: 10px;
     }

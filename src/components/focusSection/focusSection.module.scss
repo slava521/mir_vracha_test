@@ -22,7 +22,7 @@
     }
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .focus {
         margin-top: 20px;
 
@@ -32,7 +32,7 @@
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .focus {
         margin-top: 10px;
 
@@ -46,7 +46,7 @@
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .focus {
         margin-top: 5px;
 

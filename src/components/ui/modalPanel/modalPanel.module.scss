@@ -31,19 +31,19 @@
     }
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .modal {
         padding: 20px;
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .modal {
         padding: 14px;
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .modal {
         padding: 8px;
     }

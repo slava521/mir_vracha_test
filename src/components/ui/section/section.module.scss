@@ -17,7 +17,7 @@
     }
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .section {
         padding: 0 25px;
 
@@ -28,7 +28,7 @@
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .section {
         padding: 0 14px;
 
@@ -40,7 +40,7 @@
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .section {
         padding: 0 10px;
 

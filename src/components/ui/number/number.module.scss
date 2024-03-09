@@ -28,19 +28,19 @@
     transform: translate(-50%, -50%);
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .number {
         --size: 60px;
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .number {
         --size: 50px;
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .number {
         --size: 40px;
     }

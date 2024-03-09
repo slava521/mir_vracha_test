@@ -51,21 +51,21 @@ sup {
     top: -0.4em;
 }
 
-@media #{$laptop} {
+@include media(lg) {
     html {
         --lh: #{$main-lh * 0.75};
         --fs: #{$main-fs * 0.75};
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     html {
         --lh: #{$main-lh * 0.6};
         --fs: #{$main-fs * 0.6};
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     html {
         --lh: #{$main-lh * 0.4};
         --fs: #{$main-fs * 0.4};

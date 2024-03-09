@@ -30,7 +30,7 @@
     white-space: nowrap;
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .inhalers {
         flex-wrap: wrap;
         justify-content: center;
@@ -47,7 +47,7 @@
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .inhalers {
         &__rows {
             &__textBlock {
@@ -57,7 +57,7 @@
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .inhalers {
         &__rows {
             &__textBlock {

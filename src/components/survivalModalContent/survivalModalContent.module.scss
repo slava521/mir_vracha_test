@@ -41,7 +41,7 @@
     }
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .blocks {
         gap: 20px;
         justify-content: space-around;
@@ -51,13 +51,13 @@
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .blocks, .header {
         margin: 20px auto;
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .blocks, .header {
         margin: 10px auto;
     }

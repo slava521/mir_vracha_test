@@ -25,7 +25,7 @@
     }
 }
 
-@media #{$laptopL} {
+@include media(sl) {
     .inhaler {
         padding: 25px 14px;
         font-size: $main-fs * 0.75;
@@ -36,7 +36,7 @@
     }
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .inhaler {
         font-size: inherit;
         line-height: inherit;
@@ -50,7 +50,7 @@
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .inhaler {
         width: 100%;
 
@@ -60,7 +60,7 @@
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .inhaler {
         &__header {
             line-height: $main-lh * 0.6;

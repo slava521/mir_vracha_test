@@ -35,7 +35,7 @@
     }
 }
 
-@media #{$laptopL} {
+@include media(sl) {
     .stats {
         width: 30%;
 
@@ -46,7 +46,7 @@
     }
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .stats {
         padding: 20px 10px;
         width: calc(50% - 15px);
@@ -63,7 +63,7 @@
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .stats {
         &__image {
             height: 90px;
@@ -75,14 +75,14 @@
     }
 }
 
-@media #{$mobileL} {
+@include media(sm) {
     .stats {
         gap: 6px;
         width: 100%;
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .stats {
         &__image {
             height: 80px;

@@ -64,7 +64,7 @@
     }
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .myth {
         padding: 30px 39px 30px 28px;
         gap: 20px;
@@ -93,7 +93,7 @@
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .myth {
         padding: 23px 30px 23px 21px;
         gap: 15px;
@@ -112,7 +112,7 @@
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .myth {
         padding: 16px 22px 16px 14px;
         gap: 10px;

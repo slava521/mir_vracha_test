@@ -13,26 +13,26 @@
     z-index: 4;
 }
 
-@media #{$laptopL} {
+@include media(sl) {
     .container {
         gap: 80px;
     }
 }
 
-@media #{$laptop} {
+@include media(lg) {
     .container {
         gap: 60px;
         margin: 70px auto 50px;
     }
 }
 
-@media #{$tablet} {
+@include media(md) {
     .container {
         margin: 40px auto 30px;
     }
 }
 
-@media #{$mobile} {
+@include media(xs) {
     .container {
         gap: 30px;
         margin: 30px auto 30px;
