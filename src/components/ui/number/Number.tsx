@@ -1,4 +1,4 @@
-import classes from "./number.module.css";
+import classes from "./number.module.scss";
 import {FC} from "react";
 
 type Props = {

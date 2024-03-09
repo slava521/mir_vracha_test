@@ -1,0 +1,95 @@
+@import "@/app/variables";
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 15px;
+    background: #FDD96640;
+    border-radius: 20px;
+    max-width: 367px;
+    width: 33%;
+    text-align: center;
+
+    &__image {
+        height: 134px;
+    }
+
+    &__disease {
+        font-size: 1.1rem;
+    }
+
+    &__percent {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4rem;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__research {
+        font-weight: 300;
+        font-size: 0.75rem;
+        line-height: $main-lh * 0.75;
+    }
+}
+
+@media #{$laptopL} {
+    .stats {
+        width: 30%;
+
+        &__percent {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+    }
+}
+
+@media #{$laptop} {
+    .stats {
+        padding: 20px 10px;
+        width: calc(50% - 15px);
+        gap: 10px;
+
+        &__image {
+            height: 100px;
+        }
+
+        &__research {
+            line-height: $main-lh * 0.6;
+
+        }
+    }
+}
+
+@media #{$tablet} {
+    .stats {
+        &__image {
+            height: 90px;
+        }
+
+        &__research {
+            line-height: $main-lh * 0.4;
+        }
+    }
+}
+
+@media #{$mobileL} {
+    .stats {
+        gap: 6px;
+        width: 100%;
+    }
+}
+
+@media #{$mobile} {
+    .stats {
+        &__image {
+            height: 80px;
+        }
+
+        &__research {
+            line-height: $main-lh * 0.3;
+        }
+    }
+}

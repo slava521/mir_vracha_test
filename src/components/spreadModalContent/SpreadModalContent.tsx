@@ -1,5 +1,5 @@
 import {FC} from "react";
-import classes from "./spreadModalContent.module.css";
+import classes from "./spreadModalContent.module.scss";
 
 const SpreadModalContent: FC = () => {
     return (

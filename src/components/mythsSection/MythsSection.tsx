@@ -3,7 +3,7 @@
 import Section from "@/components/ui/section/Section";
 import Myth from "@/components/myth/Myth";
 import {FC, ReactNode} from "react";
-import classes from "./mythsSection.module.css";
+import classes from "./mythsSection.module.scss";
 import {useModal} from "@/hooks/useModal/useModal";
 import SpreadModalContent from "@/components/spreadModalContent/SpreadModalContent";
 import SurvivalModalContent from "@/components/survivalModalContent/SurvivalModalContent";

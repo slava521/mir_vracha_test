@@ -1,0 +1,68 @@
+@import "@/app/variables";
+
+.inhalers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+
+    &__rows {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        & > img {
+            max-width: 40%;
+        }
+
+        &__textBlock {
+            padding: 30px 40px;
+            width: calc(50% - 15px);
+            margin-top: 22px;
+            margin-bottom: 93px;
+            position: relative;
+        }
+    }
+}
+
+.noWrap {
+    white-space: nowrap;
+}
+
+@media #{$laptop} {
+    .inhalers {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__rows {
+            gap: 40px;
+            margin: 40px auto;
+
+            &__textBlock {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .inhalers {
+        &__rows {
+            &__textBlock {
+                padding: 20px 30px;
+            }
+        }
+    }
+}
+
+@media #{$mobile} {
+    .inhalers {
+        &__rows {
+            &__textBlock {
+                padding: 10px 20px;
+            }
+        }
+    }
+}

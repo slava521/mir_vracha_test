@@ -1,0 +1,133 @@
+@import "@/app/variables";
+
+.myth {
+    display: flex;
+    gap: 29px;
+    border-radius: 20px;
+    border: 1px solid #01457A;
+    padding: 40px 52px 40px 38px;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__icon {
+        --size: 80px;
+
+        height: var(--size);
+        width: var(--size);
+        border-radius: 0 50% 50% 50%;
+        position: relative;
+        background: $yellowGreenGradient;
+
+        &__img {
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__header {
+        background-image: url("/ui/background-arrow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        max-width: 295px;
+        max-height: 116px;
+        height: min-content;
+        padding-top: 6px;
+        padding-right: 47px;
+    }
+
+    &__text {
+        position: relative;
+        width: calc(100% - 443px);
+        max-width: 750px;
+
+        &__blur {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+            height: 100%;
+        }
+    }
+
+    &__hand {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media #{$laptop} {
+    .myth {
+        padding: 30px 39px 30px 28px;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        &__icon {
+            --size: 60px;
+        }
+
+        &__header {
+            max-width: none;
+            height: auto;
+            background-size: contain;
+            padding-right: 24px;
+            width: calc(100% - 80px);
+        }
+
+        &__text {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__hand {
+            width: 60px;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .myth {
+        padding: 23px 30px 23px 21px;
+        gap: 15px;
+
+        &__icon {
+            --size: 50px;
+        }
+
+        &__header {
+            width: calc(100% - 65px);
+        }
+
+        &__hand {
+            width: 40px;
+        }
+    }
+}
+
+@media #{$mobile} {
+    .myth {
+        padding: 16px 22px 16px 14px;
+        gap: 10px;
+
+        &__icon {
+            --size: 40px;
+        }
+
+        &__header {
+            padding-top: 3px;
+            width: calc(100% - 50px);
+        }
+
+        &__hand {
+            width: 30px;
+        }
+    }
+}

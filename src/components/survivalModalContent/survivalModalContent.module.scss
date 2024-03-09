@@ -1,3 +1,5 @@
+@import "@/app/variables";
+
 .blocks {
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,31 @@
     flex-direction: column;
     gap: 9px;
     @media screen and (max-width: 320px) {
+        gap: 6px;
+    }
+}
+
+@media #{$laptop} {
+    .blocks {
+        gap: 20px;
+        justify-content: space-around;
+    }
+    .header {
+        margin: 26px auto;
+    }
+}
+
+@media #{$tablet} {
+    .blocks, .header {
+        margin: 20px auto;
+    }
+}
+
+@media #{$mobile} {
+    .blocks, .header {
+        margin: 10px auto;
+    }
+    .text {
         gap: 6px;
     }
 }

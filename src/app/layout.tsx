@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
-import "./globals.css";
-import classes from "./layout.module.css";
+import "./globals.scss";
+import classes from "./layout.module.scss";
 import Container from "@/components/ui/container/Container";
 import {NotoSans} from "@/app/fonts";
 
@@ -18,9 +18,9 @@ export default function RootLayout(
     return (
         <html lang="ru">
         <body className={NotoSans.className}>
-            <div className={`${classes.backgroundLine} ${classes.blueLine}`}/>
-            <div className={`${classes.backgroundLine} ${classes.greenLine}`}/>
-            <div className={`${classes.backgroundLine} ${classes.yellowLine}`}/>
+            <div className={`${classes.backgroundLine} ${classes.backgroundLine__blue}`}/>
+            <div className={`${classes.backgroundLine} ${classes.backgroundLine__green}`}/>
+            <div className={`${classes.backgroundLine} ${classes.backgroundLine__yellow}`}/>
             <Container>
                 {children}
             </Container>

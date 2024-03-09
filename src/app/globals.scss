@@ -1,3 +1,5 @@
+@import "variables";
+
 @font-face {
     font-family: 'Century Gothic';
     src: url('/fonts/CenturyGothic-Bold.eot');
@@ -19,20 +21,28 @@
 }
 
 body {
-    color: #01457A;
+    color: $primary-color;
     overflow-x: hidden;
-    line-height: 32.69px;
     background: linear-gradient(180deg, #FFFFFF 35.7%, #D8EFFF 100%);
 }
 
-body, h4 {
+html {
+    --fs: #{$main-fs};
+    --lh: #{$main-lh};
+
     font-weight: 400;
-    font-size: 24px;
-    letter-spacing: 0.1px;
+    font-size: var(--fs);
+    line-height: var(--lh);
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
 }
 
 sup {
@@ -41,39 +51,23 @@ sup {
     top: -0.4em;
 }
 
-@media screen and (max-width: 1024px) {
-    body{
-        line-height: 24px;
-        font-size: 18px;
-    }
-    h4 {
-        font-size: 18px;
-    }
-    h3 {
-        font-size: 22px;
+@media #{$laptop} {
+    html {
+        --lh: #{$main-lh * 0.75};
+        --fs: #{$main-fs * 0.75};
     }
 }
-@media screen and (max-width: 768px) {
-    body{
-        line-height: 18px;
-        font-size: 14px;
-    }
-    h4 {
-        font-size: 14px;
-    }
-    h3 {
-        font-size: 16px;
+
+@media #{$tablet} {
+    html {
+        --lh: #{$main-lh * 0.6};
+        --fs: #{$main-fs * 0.6};
     }
 }
-@media screen and (max-width: 320px) {
-    body{
-        line-height: 14px;
-        font-size: 11px;
-    }
-    h4 {
-        font-size: 11px;
-    }
-    h3 {
-        font-size: 13px;
+
+@media #{$mobile} {
+    html {
+        --lh: #{$main-lh * 0.4};
+        --fs: #{$main-fs * 0.4};
     }
 }

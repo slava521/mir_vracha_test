@@ -1,3 +1,5 @@
+@import "@/app/variables";
+
 .container {
     margin: 140px auto 117px;
     width: 90%;
@@ -9,18 +11,29 @@
     gap: 110px;
     position: relative;
     z-index: 4;
+}
 
-    @media screen and (max-width: 1440px) {
+@media #{$laptopL} {
+    .container {
         gap: 80px;
     }
-    @media screen and (max-width: 1024px) {
+}
+
+@media #{$laptop} {
+    .container {
         gap: 60px;
         margin: 70px auto 50px;
     }
-    @media screen and (max-width: 768px) {
+}
+
+@media #{$tablet} {
+    .container {
         margin: 40px auto 30px;
     }
-    @media screen and (max-width: 320px) {
+}
+
+@media #{$mobile} {
+    .container {
         gap: 30px;
         margin: 30px auto 30px;
     }

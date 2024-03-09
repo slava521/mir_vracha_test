@@ -1,0 +1,47 @@
+@import "@/app/variables";
+
+.number {
+    --size: 80px;
+
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $yellowGreenGradient;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+}
+
+.topLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.bottomRight {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+@media #{$laptop} {
+    .number {
+        --size: 60px;
+    }
+}
+
+@media #{$tablet} {
+    .number {
+        --size: 50px;
+    }
+}
+
+@media #{$mobile} {
+    .number {
+        --size: 40px;
+    }
+}

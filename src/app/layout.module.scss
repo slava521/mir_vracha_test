@@ -1,0 +1,28 @@
+.backgroundLine {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    height: 100px;
+
+    &__blue {
+        background-image: url('/ui/layout-line-blue.svg');
+        width: 65%;
+        z-index: 3;
+    }
+
+    &__green {
+        background-image: url('/ui/layout-line-green.svg');
+        width: 49%;
+        z-index: 2;
+        left: 28%;
+    }
+
+    &__yellow {
+        background-image: url('/ui/layout-line-yellow.svg');
+        width: 54%;
+        z-index: 1;
+        left: 32%;
+    }
+}

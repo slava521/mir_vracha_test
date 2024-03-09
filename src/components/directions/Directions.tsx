@@ -2,7 +2,7 @@
 
 import {FC} from "react";
 import InhalerBlock from "@/components/inhalerBlock/InhalerBlock";
-import classes from "./directions.module.css";
+import classes from "./directions.module.scss";
 import Block from "@/components/ui/block/Block";
 import {useWindowWidth} from "@/hooks/useWindowWidth/useWindowWidth";
 import Number from "@/components/ui/number/Number";
@@ -35,13 +35,13 @@ const Directions: FC = () => {
                 />
             </div>
             {!isSmallWindow && (
-                <div className={classes.texts}>
+                <div className={classes.inhalers__rows}>
                     <img src='/ui/arrow.svg' alt='Стрелка'/>
                     <img src='/ui/arrow.svg' alt='Стрелка'/>
                 </div>
             )}
-            <div className={classes.texts}>
-                <Block className={classes.textBlock}>
+            <div className={classes.inhalers__rows}>
+                <Block className={classes.inhalers__rows__textBlock}>
                     <p>
                         Пациентам с ХОБЛ рекомендуется комбинирование бронходилататоров с разными механизмами действия;
                     </p>
@@ -57,7 +57,7 @@ const Directions: FC = () => {
                         </>
                     )}
                 </Block>
-                <Block className={classes.textBlock}>
+                <Block className={classes.inhalers__rows__textBlock}>
                     <p>
                         Пациентам с ХОБЛ и частыми обострениями (≥2 среднетяжелых обострений в течение 1 года/1
                         тяжелое обострение, потребовавшее госпитализации) рекомендуется назначение ИГКС в дополнение

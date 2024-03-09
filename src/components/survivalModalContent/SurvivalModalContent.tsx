@@ -1,5 +1,5 @@
 import StatsBlock from "@/components/statsBlock/StatsBlock";
-import classes from "./survivalModalContent.module.css";
+import classes from "./survivalModalContent.module.scss";
 
 type StatsBlocks = {
     id: number;

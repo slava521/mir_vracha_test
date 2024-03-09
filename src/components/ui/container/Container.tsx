@@ -1,5 +1,5 @@
 import {FC, PropsWithChildren} from "react";
-import classes from "./container.module.css";
+import classes from "./container.module.scss";
 
 const Container:FC<PropsWithChildren> = ({children}) => {
     return (

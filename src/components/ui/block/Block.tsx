@@ -1,5 +1,5 @@
 import {FC, PropsWithChildren} from "react";
-import classes from "./block.module.css";
+import classes from "./block.module.scss";
 
 type Props = PropsWithChildren & {
     className?: string;

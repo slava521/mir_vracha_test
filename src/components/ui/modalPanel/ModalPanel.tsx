@@ -1,5 +1,5 @@
 import {FC, PropsWithChildren} from "react";
-import classes from "./modalPanel.module.css";
+import classes from "./modalPanel.module.scss";
 
 type Props = PropsWithChildren & {
     close: VoidFunction;

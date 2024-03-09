@@ -1,5 +1,5 @@
-import {FC, ReactNode} from "react";
-import classes from "./statsBlock.module.css";
+import {FC} from "react";
+import classes from "./statsBlock.module.scss";
 
 type Props = {
     imageUrl: string;
@@ -11,11 +11,11 @@ type Props = {
 
 const StatsBlock: FC<Props> = ({imageUrl, percent, disease, research, remark}) => {
     return (
-        <div className={classes.content}>
-            <img className={classes.image} src={imageUrl} alt='Заболевание'/>
-            <p className={classes.percent}>{percent}%</p>
-            <p className={classes.disease}>пациентов с <b>{disease}</b>{remark ? <sup>1</sup>:null}</p>
-            <p className={classes.research}>{research}</p>
+        <div className={classes.stats}>
+            <img className={classes.stats__image} src={imageUrl} alt='Заболевание'/>
+            <p className={classes.stats__percent}>{percent}%</p>
+            <p className={classes.stats__disease}>пациентов с <b>{disease}</b>{remark ? <sup>1</sup>:null}</p>
+            <p className={classes.stats__research}>{research}</p>
         </div>
     );
 };

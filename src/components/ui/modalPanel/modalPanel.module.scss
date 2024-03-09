@@ -1,3 +1,5 @@
+@import "@/app/variables";
+
 .background {
     background-color: #B9B9B980;
     position: fixed;
@@ -24,16 +26,25 @@
     overflow-y: auto;
     max-height: 80vh;
 
-    @media screen and (max-width: 1024px) {
-        padding: 20px;
-    }
-    @media screen and (max-width: 768px) {
-        padding: 14px;
-    }
-    @media screen and (max-width: 320px) {
-        padding: 8px;
+    & > img {
+        width: 100%;
     }
 }
-.modal img {
-    width: 100%;
+
+@media #{$laptop} {
+    .modal {
+        padding: 20px;
+    }
+}
+
+@media #{$tablet} {
+    .modal {
+        padding: 14px;
+    }
+}
+
+@media #{$mobile} {
+    .modal {
+        padding: 8px;
+    }
 }

@@ -1,0 +1,28 @@
+@import "@/app/variables";
+
+.text {
+    --mb: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: var(--mb);
+}
+
+@media #{$laptop} {
+    .text {
+        --mb: 30px;
+    }
+}
+
+@media #{$tablet} {
+    .text {
+        --mb: 20px;
+    }
+}
+
+@media #{$mobile} {
+    .text {
+        --mb: 10px;
+    }
+}
