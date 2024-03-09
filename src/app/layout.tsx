@@ -6,7 +6,7 @@ import {NotoSans} from "@/app/fonts";
 
 export const metadata: Metadata = {
     title: "ХОБЛ",
-    description: "",
+    description: "ХОБЛ: мифы и реальность. Терапия ХОБЛ: что в фокусе?",
 };
 
 export default function RootLayout(
