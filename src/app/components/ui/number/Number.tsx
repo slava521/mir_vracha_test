@@ -7,11 +7,11 @@ type Props = {
 }
 
 const Number:FC<Props> = ({number, position}) => {
-    const positionClass = position ? classes[position] : ''
+    const positionClass = position ? classes[`number--${position}`] : ''
 
     return (
         <div className={`${classes.number} ${positionClass}`}>
-            <p>{number}</p>
+            {number}
         </div>
     );
 };

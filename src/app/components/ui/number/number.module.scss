@@ -12,20 +12,20 @@
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
-}
 
-.topLeft {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-}
+    &--topLeft {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
 
-.bottomRight {
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    transform: translate(-50%, -50%);
+    &--bottomRight {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @include media(lg) {
