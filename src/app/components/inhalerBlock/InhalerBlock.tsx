@@ -1,7 +1,7 @@
 import {FC, ReactNode} from "react";
 import classes from "./inhalerBlock.module.scss";
-import Block from "@/components/ui/block/Block";
-import Number from "@/components/ui/number/Number";
+import Block from "@/app/components/ui/block/Block";
+import Number from "@/app/components/ui/number/Number";
 
 type Props = {
     header: ReactNode | string;

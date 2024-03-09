@@ -1,7 +1,7 @@
 import {FC} from "react";
-import Section from "@/components/ui/section/Section";
+import Section from "@/app/components/ui/section/Section";
 import classes from "./focusSection.module.scss";
-import Directions from "@/components/directions/Directions";
+import Directions from "@/app/components/directions/Directions";
 
 const FocusSection: FC = () => {
     return (

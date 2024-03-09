@@ -1,11 +1,11 @@
 "use client"
 
 import {FC} from "react";
-import InhalerBlock from "@/components/inhalerBlock/InhalerBlock";
+import InhalerBlock from "@/app/components/inhalerBlock/InhalerBlock";
 import classes from "./directions.module.scss";
-import Block from "@/components/ui/block/Block";
+import Block from "@/app/components/ui/block/Block";
 import {useBreakpoints} from "@/hooks/useBreakpoints/useBreakpoints";
-import Number from "@/components/ui/number/Number";
+import Number from "@/app/components/ui/number/Number";
 
 const Directions: FC = () => {
     const {isLaptop, isTablet, isMobile} = useBreakpoints()

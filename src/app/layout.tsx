@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.scss";
 import classes from "./layout.module.scss";
-import Container from "@/components/ui/container/Container";
+import Container from "@/app/components/ui/container/Container";
 import {NotoSans} from "@/app/fonts";
 
 export const metadata: Metadata = {

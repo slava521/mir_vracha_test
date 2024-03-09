@@ -1,4 +1,4 @@
-import StatsBlock from "@/components/statsBlock/StatsBlock";
+import StatsBlock from "@/app/components/statsBlock/StatsBlock";
 import classes from "./survivalModalContent.module.scss";
 
 type StatsBlocks = {
