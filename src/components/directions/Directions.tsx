@@ -4,11 +4,11 @@ import {FC} from "react";
 import InhalerBlock from "@/components/inhalerBlock/InhalerBlock";
 import classes from "./directions.module.scss";
 import Block from "@/components/ui/block/Block";
-import {useWindowWidth} from "@/hooks/useWindowWidth/useWindowWidth";
+import {useBreakpoints} from "@/hooks/useBreakpoints/useBreakpoints";
 import Number from "@/components/ui/number/Number";
 
 const Directions: FC = () => {
-    const {isLaptop, isTablet, isMobile} = useWindowWidth()
+    const {isLaptop, isTablet, isMobile} = useBreakpoints()
     const isSmallWindow = isLaptop || isTablet || isMobile;
 
     return (

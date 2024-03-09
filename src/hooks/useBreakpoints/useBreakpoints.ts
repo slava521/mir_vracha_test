@@ -8,7 +8,7 @@ type ReturnType = {
     isMobile:boolean
 }
 
-export const useWindowWidth = (): ReturnType => {
+export const useBreakpoints = (): ReturnType => {
     const [width, setWidth] = useState<number>(0)
 
     useEffect(() => {
