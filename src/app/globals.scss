@@ -33,6 +33,7 @@ html {
     font-weight: 400;
     font-size: var(--fs);
     line-height: var(--lh);
+    min-height: 100vh;
 }
 
 h3 {
@@ -49,6 +50,10 @@ sup {
     vertical-align: baseline;
     position: relative;
     top: -0.4em;
+}
+
+a:link, a:visited {
+    color: blue;
 }
 
 @include media(lg) {
