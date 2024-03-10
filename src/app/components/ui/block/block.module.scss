@@ -1,5 +1,7 @@
+@import "@/app/variables";
+
 .block {
-    box-shadow: 0 0 25px 0 #8EA0AD59;
+    box-shadow: $shadow;
     border-radius: 20px;
     background: linear-gradient(90deg, #FBFDFF 0%, #D8EFFF 100.86%);
 }
