@@ -14,6 +14,7 @@
 
     &__image {
         height: 134px;
+        margin-bottom: 20px;
     }
 
     &__disease {
@@ -54,6 +55,7 @@
 
         &__image {
             height: 100px;
+            margin-bottom: 10px;
         }
 
         &__research {
@@ -67,6 +69,7 @@
     .stats {
         &__image {
             height: 90px;
+            margin-bottom: 5px;
         }
 
         &__research {
@@ -86,6 +89,7 @@
     .stats {
         &__image {
             height: 80px;
+            margin-bottom: 0;
         }
 
         &__research {
