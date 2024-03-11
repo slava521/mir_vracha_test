@@ -3,6 +3,7 @@ import "./globals.scss";
 import classes from "./layout.module.scss";
 import Container from "@/app/components/ui/container/Container";
 import {NotoSans} from "@/app/fonts";
+import {Analytics} from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
     title: "ХОБЛ",
@@ -24,6 +25,7 @@ export default function RootLayout(
             <Container>
                 {children}
             </Container>
+            <Analytics />
         </body>
         </html>
     );
