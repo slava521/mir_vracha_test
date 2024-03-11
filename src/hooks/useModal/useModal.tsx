@@ -1,3 +1,5 @@
+'use client'
+
 import {FC, useState} from "react";
 import ModalPanel from "@/app/components/ui/modalPanel/ModalPanel";
 import {useScrollLock} from "@/hooks/useScrollLock/useScrollLock";
